@@ -1,4 +1,5 @@
 body {
+    scroll-snap-type-x: none;
 
     .background-container {
         position: fixed;
@@ -228,6 +229,7 @@ body {
             display: flex;
             justify-content: space-around;
             margin-bottom: 1rem;
+            width: 100%;
         }
     }
 
