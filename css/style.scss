@@ -1,0 +1,234 @@
+body {
+
+    .background-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+        /* Place le fond derrière le contenu */
+
+        .background-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Couvre toute la zone sans déformer l'image */
+            filter: blur(2rem);
+            /* Applique un flou de 8 pixels */
+        }
+
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(20, 20, 20, 0.7);
+        }
+
+    }
+
+    header {
+        #logo {
+            img {
+                position: absolute;
+                z-index: 10;
+                top: 25%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            h1 {
+                position: absolute;
+                z-index: 10;
+                top: 25%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .carousel-item {
+            height: 40rem;
+        }
+
+        .pizza-1 {
+            background-image: url(../images/presentation.jpg);
+            background-size: cover;
+            background-position: bottom;
+        }
+
+        .pizza-2 {
+            background-image: url(../images/presentation2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .pizza-3 {
+            background-image: url(../images/presentation3.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    .navbar {
+        .container-fluid {
+            img {
+                width: 4rem;
+            }
+
+            #navbarSupportedContent {
+                justify-content: end;
+
+                .nav-link.active {
+                    background-color: #402e32;
+                    color: #dfe0df;
+                }
+
+                .nav-link {
+                    color: #402e32;
+                }
+            }
+        }
+    }
+
+    main {
+        margin-top: 2rem;
+        display: flex;
+        gap: 2rem;
+
+        .scrollspy-example {
+            .card {
+                box-shadow: 10px 10px 15px black;
+                background-color:rgba(64, 46, 50, 0.7) ;
+                color: white;
+                // background-color: #cc9500 ;
+
+                .green {
+                    // background-color: green;
+                    border: 3px solid green;
+                    color: white;
+                }
+
+                img {
+                    padding: 0 1rem;
+                    // height: 100%;
+                }
+
+                .red {
+                    border: 3px solid red;
+                    color: white;
+                }
+
+                .smoothie {
+                    padding: 0;
+                    padding-left: 2rem;
+                }
+            }
+
+            #scrollspyHeading1 {
+                width: 87%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                // margin-bottom: 5rem;
+
+                .card {
+                    .card-body {
+                        div {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+
+            #scrollspyHeading2 {
+                width: 87%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                // margin-bottom: 5rem;
+
+                .card {
+                    .card-body {
+                        div {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+
+            #scrollspyHeading3 {
+                width: 90%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 5rem;
+
+                .card {
+                    .card-body {
+                        div {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+
+            .description {
+                width: 87%;
+                margin: 0 auto;
+                color: white;
+                background-color: rgba(204, 149, 0, 0.2);
+                width: 96%;
+                margin: 1rem auto;
+                padding: 1rem;
+                border-radius: 1rem;
+            }
+        }
+
+
+    }
+
+    footer {
+        #carte {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            color: white;
+            background-color: rgba(204, 149, 0, 0.2);
+            width: 96%;
+            margin: 1rem auto;
+            padding: 1rem;
+            border-radius: 1rem;
+
+            div {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    font-size: 2rem;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1.5rem;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+
+
+        #bottom-bar {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 1rem;
+        }
+    }
+
+}
